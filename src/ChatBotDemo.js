@@ -1,64 +1,6 @@
-// import React, { useState } from "react";
-// import { MessageBox } from "react-chat-elements";
-// import { Input } from "react-chat-elements";
-// import { Button } from "react-chat-elements";
-
-// const ChatBotDemo = () => {
-//     const [messages, setMessages] = useState([]);
-//     const [input, setInput] = useState("");
-
-//     const sendMessage = () => {
-//         if (!input.trim()) return;
-
-//         const userMessage = {
-//             position: "right",
-//             type: "text",
-//             text: input,
-//             date: new Date(),
-//         };
-
-//         setMessages([...messages, userMessage]);
-//         setInput("");
-
-//         // Fake API Backend Response Simulation
-//         setTimeout(() => {
-//             const botMessage = {
-//                 position: "left",
-//                 type: "text",
-//                 text: "Hello! I'm a chatbot. How can I help you?",
-//                 date: new Date(),
-//             };
-//             setMessages((prev) => [...prev, botMessage]);
-//         }, 1000);
-//     };
-
-//     return (
-//         <div style={{ maxWidth: "500px", margin: "auto", padding: "20px", border: "1px solid #ddd", borderRadius: "10px" }}>
-//             <div style={{ height: "400px", overflowY: "auto", display: "flex", flexDirection: "column", gap: "10px" }}>
-//                 {messages.map((msg, index) => (
-//                     <MessageBox key={index} {...msg} />
-//                 ))}
-//             </div>
-
-//             <div style={{ display: "flex", marginTop: "10px" }}>
-//                 <Input
-//                     placeholder="Type a message..."
-//                     value={input}
-//                     onChange={(e) => setInput(e.target.value)}
-//                     onKeyPress={(e) => e.key === "Enter" && sendMessage()}
-//                 />
-//                 <Button onClick={sendMessage}>Send</Button>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default ChatBotDemo;
-
 import { useState } from "react";
 import { TextField, PrimaryButton, Stack } from "@fluentui/react";
 import { Persona, PersonaSize } from "@fluentui/react/lib/Persona";
-import React from "react";
 
 const ChatBotDemo = () => {
   const [messages, setMessages] = useState([
