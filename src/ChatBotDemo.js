@@ -24,7 +24,7 @@ const ChatBotDemo = () => {
 
   return (
     <Stack tokens={{ childrenGap: 10 }} styles={{ root: { maxWidth: 500, margin: "auto", padding: 20 } }}>
-      <h2 style={{ textAlign: "center", margin: 0 }}>Welcome to the chatbot</h2>
+      <h2 style={{ textAlign: "center", margin: 0 }}>Welcome to the chatbot!</h2>
       <Stack
         tokens={{ childrenGap: 10 }}
         styles={{ root: { height: 400, overflowY: "auto", padding: 10, border: "1px solid #ccc", borderRadius: 5 } }}
