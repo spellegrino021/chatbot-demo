@@ -17,7 +17,7 @@ const ChatBotDemo = () => {
 
     // Fake AI Response
     setTimeout(() => {
-      const botMessage = { text: "I'm here to help!", sender: "bot" };
+      const botMessage = { text: "I'm here to help", sender: "bot" };
       setMessages((prev) => [...prev, botMessage]);
     }, 1000);
   };
